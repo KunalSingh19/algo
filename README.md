@@ -1,23 +1,47 @@
-# RL Meta-Ensemble Portfolio Framework
+# RL-Meta-Ensemble
 
-## Overview
+A modular, production-grade reinforcement learning portfolio optimizer using PPO (LSTM), Stable-Baselines3, and custom feature/reward engineering.
 
-A modular, research-friendly reinforcement learning pipeline for multi-asset trading and portfolio optimization.  
-Includes custom environments, technical features, reward engineering, and SB3 agent training out-of-the-box.
+---
+
+## Features
+
+- Multi-asset RL trading via PPO (LSTM)
+- Custom OpenAI Gym environment
+- Feature engineering: returns, indicators, volume, correlations, regime detection
+- Risk-adjusted, configurable reward functions
+- Training, evaluation, and logging pipeline
+- Backtesting, plotting, and metrics dashboard
+- Modular structure for research and deployment
+
+---
 
 ## Structure
 
-- `config/`: All experiment, agent, and environment configs
-- `data/`: Data download, preprocessing, splitting
-- `envs/`: Custom Gym environments (multi-asset, wrappers)
-- `features/`: Technical indicators, alpha signals
-- `models/`: RL agent logic, training, evaluation, callbacks
-- `rewards/`: Reward classes and custom reward logic
-- `utils/`: Logging, plotting, metrics
-- `tests/`: Unit tests for every major component
+```
+RL-Meta-Ensemble/
+├── config/
+├── data/
+├── envs/
+├── features/
+├── models/
+├── rewards/
+├── utils/
+├── main.py
+```
 
-## Usage
+---
 
-```bash
-pip install -r requirements.txt
-python main.py
+## Quickstart
+
+1. Install requirements:  
+   `pip install -r requirements.txt`
+
+2. Run:  
+   `python main.py --config config/experiment.yaml`
+
+3. View results in `models/` and dashboards in `utils/plotting.py`
+
+---
+
+## See each folder for details.
